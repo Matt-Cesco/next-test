@@ -5,6 +5,7 @@ import Image from "next/image";
 import diverseImage from "../public/image-test.webp";
 import groq from "groq";
 import sanityClient from "../client";
+import ContentHome from "../components/ContentHome";
 
 export async function getStaticProps() {
   const query = groq`
@@ -65,7 +66,7 @@ export default function Home({ home }) {
             </div>
           </div>
         </section>
-        
+        <ContentHome />
       </div>
     </>
   );
