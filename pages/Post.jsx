@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SanityClient from "./client";
+import SanityClient from "../client";
 import Link from "next/link";
 import Image from "next/image";
 

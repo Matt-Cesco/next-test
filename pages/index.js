@@ -3,34 +3,30 @@ import { data } from "autoprefixer";
 import imageUrlBuilder from "@sanity/image-url";
 import Image from "next/image";
 import diverseImage from "../public/image-test.webp";
-import groq from 'groq';
-import sanityClient from "../pages/client";
+import groq from "groq";
+import sanityClient from "../client";
 
-
-export async function getStaticProps(){
-
-   const query = groq`
+export async function getStaticProps() {
+  const query = groq`
       {
          "home": *[_type == 'homepage']
       }
    `;
 
-   const data = await sanityClient.fetch(query);
+  const data = await sanityClient.fetch(query);
 
-   return {
-      props: {
-         home: data.home[0],
-      },
-   };
+  return {
+    props: {
+      home: data.home[0],
+    },
+  };
 }
 
 const builder = imageUrlBuilder(sanityClient);
 
 function urlFor(source) {
   return builder.image(source);
-};
-
-
+}
 
 export default function Home({ home }) {
   return (
@@ -49,9 +45,7 @@ export default function Home({ home }) {
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold uppercase text-gray-900">
                 {home.title}
               </h1>
-              <p className="mb-8 leading-relaxed">
-                {home.description}
-              </p>
+              <p className="mb-8 leading-relaxed">{home.description}</p>
               <div className="flex justify-center">
                 <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                   Button
