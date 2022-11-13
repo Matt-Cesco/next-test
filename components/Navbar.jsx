@@ -42,18 +42,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/#gallery" className="font-bold">
-              Gallery
+            <Link href="/AboutUs" className="font-bold">
+              About Us
             </Link>
           </li>
           <li className="p-4">
-            <Link href="/work" className="font-bold">
-              Work
-            </Link>
-          </li>
-          <li className="p-4">
-            <Link href="/contact" className="font-bold">
-              Contact
+            <Link href="/Post" className="font-bold">
+              Blog
             </Link>
           </li>
         </ul>
