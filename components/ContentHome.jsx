@@ -1,41 +1,9 @@
 import Image from "next/image";
 import diverseImage from "../public/image-test.webp";
-import skyscaper from "../public/skyscaper.webp";
 
-function AboutUs() {
+const ContentHome = () => {
   return (
-    <div className="py-24">
-      <section className="text-gray-700 body-font">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold uppercase text-gray-900">
-              About us page
-            </h1>
-            <p className="mb-8 leading-relaxed">
-              Copper mug tryhhard pitchfork pour-over freegan heirloom neutra
-              air plant cold-pressed tacos poke beard tote bag. Heirloom echo
-              park mlkshk tote bag selvage hot chicken authentic tumeric
-              truffaut hexagon try-hard chambray.
-            </p>
-            <div className="flex justify-center">
-              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Button
-              </button>
-              <button className="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">
-                Button
-              </button>
-            </div>
-          </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <Image
-              src={skyscaper}
-              alt="Diversification image"
-              width={512}
-              height={768}
-            />
-          </div>
-        </div>
-      </section>
+    <div>
       <section className="text-gray-700 body-font border-t border-gray-200">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
@@ -112,8 +80,8 @@ function AboutUs() {
             <Image
               src={diverseImage}
               alt="Diversification image"
-              width={636}
-              height={553}
+              width={512}
+              height={445}
             />
           </div>
           <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
@@ -432,9 +400,347 @@ function AboutUs() {
           </button>
         </div>
       </section>
-      
+      <section className="text-gray-700 body-font border-t border-gray-200">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+              Our Team
+            </h1>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+              gentrify, subway tile poke farm-to-table. Franzen you probably
+              haven't heard of them.
+            </p>
+          </div>
+          <div className="flex flex-wrap -m-2">
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <Image
+                  src={diverseImage}
+                  alt="Diversification image"
+                  width={64}
+                  height={64}
+                />
+                <div className="flex-grow px-3">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Holden Caulfield
+                  </h2>
+                  <p className="text-gray-500">UI Designer</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <Image
+                  src={diverseImage}
+                  alt="Diversification image"
+                  width={64}
+                  height={64}
+                />
+                <div className="flex-grow px-3">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Henry Letham
+                  </h2>
+                  <p className="text-gray-500">CTO</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <Image
+                  src={diverseImage}
+                  alt="Diversification image"
+                  width={64}
+                  height={64}
+                />
+                <div className="flex-grow px-3">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Oskar Blinde
+                  </h2>
+                  <p className="text-gray-500">Founder</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <Image
+                  src={diverseImage}
+                  alt="Diversification image"
+                  width={64}
+                  height={64}
+                />
+                <div className="flex-grow px-3">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    John Doe
+                  </h2>
+                  <p className="text-gray-500">DevOps</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <Image
+                  src={diverseImage}
+                  alt="Diversification image"
+                  width={64}
+                  height={64}
+                />
+                <div className="flex-grow px-3">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Martin Eden
+                  </h2>
+                  <p className="text-gray-500">Software Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <Image
+                  src={diverseImage}
+                  alt="Diversification image"
+                  width={64}
+                  height={64}
+                />
+                <div className="flex-grow px-3">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Boris Kitua
+                  </h2>
+                  <p className="text-gray-500">UX Researcher</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <Image
+                  src={diverseImage}
+                  alt="Diversification image"
+                  width={64}
+                  height={64}
+                />
+                <div className="flex-grow px-3">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Atticus Finch
+                  </h2>
+                  <p className="text-gray-500">QA Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <Image
+                  src={diverseImage}
+                  alt="Diversification image"
+                  width={64}
+                  height={64}
+                />
+                <div className="flex-grow px-3">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Alper Kamu
+                  </h2>
+                  <p className="text-gray-500">System</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <Image
+                  src={diverseImage}
+                  alt="Diversification image"
+                  width={64}
+                  height={64}
+                />
+                <div className="flex-grow px-3">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Rodrigo Monchi
+                  </h2>
+                  <p className="text-gray-500">Product Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="text-gray-700 body-font border-t border-gray-200">
+        <div className="container px-5 py-24 mx-auto flex flex-wrap">
+          <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+            <Image
+              src={diverseImage}
+              alt="Diversification image"
+              width={636}
+              height={553}
+            />
+          </div>
+          <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"></div>
+              <div className="flex-grow">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                  Shooting Stars
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"></div>
+              <div className="flex-grow">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                  The Catalyzer
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"></div>
+              <div className="flex-grow">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                  Neptune
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="text-gray-700 body-font border-t border-gray-200">
+        <div className="container px-5 py-24 mx-auto flex flex-wrap">
+          <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"></div>
+              <div className="flex-grow">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                  Shooting Stars
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"></div>
+              <div className="flex-grow">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                  The Catalyzer
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"></div>
+              <div className="flex-grow">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                  Neptune
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+            <Image
+              src={diverseImage}
+              alt="Diversification image"
+              width={636}
+              height={553}
+            />
+          </div>
+        </div>
+      </section>
+      <section className="text-gray-700 body-font border-t border-gray-200">
+        <div className="container px-5 py-24 mx-auto flex flex-wrap">
+          <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+            <Image
+              src={diverseImage}
+              alt="Diversification image"
+              width={636}
+              height={553}
+            />
+          </div>
+          <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                urca
+              </div>
+              <div className="flex-grow">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                  Shooting Stars
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"></div>
+              <div className="flex-grow">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                  The Catalyzer
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"></div>
+              <div className="flex-grow">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                  Neptune
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine.
+                </p>
+                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
-}
+};
 
-export default AboutUs;
+export default ContentHome;
