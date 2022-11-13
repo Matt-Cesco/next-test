@@ -57,8 +57,8 @@ export default function Home({ home }) {
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <Image
-                src={urlFor(home.mainImage).url()}
-                alt="Image uploaded with sanity"
+                src={diverseImage}
+                alt="Image uploaded manueally and not with sanity"
                 width={512}
                 height={445}
               />
