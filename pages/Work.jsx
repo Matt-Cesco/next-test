@@ -1,26 +1,11 @@
-import dynamic from "next/dynamic";
-import { Suspense } from "react";
-
-const DynamicFifthSection = dynamic(
-  () => import("../components/FifthSection"),
-  {
-    suspense: true,
-  }
-);
-const DynamicSixthSection = dynamic(
-  () => import("../components/SixthSection"),
-  {
-    suspense: true,
-  }
-);
+import FifthSection from "../components/FifthSection";
+import SixthSection from "../components/SixthSection";
 
 function Work() {
   return (
     <div className="py-5">
-      <Suspense fallback={`Loading...`}>
-        <DynamicFifthSection />
-        <DynamicSixthSection />
-      </Suspense>
+      <FifthSection />
+      <SixthSection />
     </div>
   );
 }
