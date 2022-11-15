@@ -1,77 +1,172 @@
+import Image from "next/image";
+import skyscaper from "../public/skyscaper.webp";
+import diverseImage from "../public/image-test.webp";
+import Link from "next/link";
 
 const SecondSection = () => {
   return (
-    <section className="text-gray-700 body-font border-t border-gray-200">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-col text-center w-full mb-20">
-          <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-            ROOF PARTY POLAROID
-          </h2>
-          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-            Master Cleanse Reliac Heirloom
-          </h1>
+    <section className="">
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-md-6 align-self-center">
+            <h1 className="fs-xxxl fw-bolder text-uppercase">
+              the national aeronautics and space administration
+            </h1>
+            <div className="col-lg-8">
+              <p className="py-lg-5 fs-lg">
+                Nasa in an independet agency of the united states fdederal
+                governemtn resposible for the civialn space program, as weell as
+                aeronativs and areopsca reserarcjh
+              </p>
+              <div className="row">
+                <div className="col-6">
+                  <h2 className="fs-xxxl text-center">16</h2>
+                  <p className="fs-sm text-center">Millions traded per day</p>
+                </div>
+                <div className="col-6">
+                  <h2 className="fs-xxxl text-center">200</h2>
+                  <p className="fs-sm text-center">Plus portfolio managed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <Image
+              src={skyscaper}
+              alt="Landing page image"
+              width={636}
+              height={954}
+            />
+          </div>
         </div>
-        <div className="flex flex-wrap -m-4">
-          <div className="p-4 md:w-1/3">
-            <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-              <div className="flex items-center mb-3">
-                <h2 className="text-gray-900 text-lg title-font font-medium">
-                  Shooting Stars
-                </h2>
-              </div>
-              <div className="flex-grow">
-                <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine.
-                </p>
-                <p className="mt-3 text-indigo-500 inline-flex items-center">
-                  Learn More
-                </p>
+      </div>
+      <hr />
+      {/* Mission section */}
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-lg-6">
+            <h2 className="fs-xxxl">Mission</h2>
+          </div>
+          <div className="col-12 col-lg-6">
+            <p className="fs-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p className="fs-md fw-bolder fst-italic pt-lg-5">
+              John Wayne - CEO
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      {/* What we do section */}
+      <div className="container">
+        <h2 className="fs-xxxl pb-lg-5 mb-lg-5">Quick Facts</h2>
+        <div className="row">
+          <div className="col-6 col-lg-4">
+            <div className="container">
+              <div className="row">
+                <div className="col-12 px-0">
+                  <p className="fs-xxl m-0">£ 10.45 M</p>
+                  <p className="fs-sm">Equity Capital</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="p-4 md:w-1/3">
-            <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-              <div className="flex items-center mb-3">
-                <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0"></div>
-                <h2 className="text-gray-900 text-lg title-font font-medium">
-                  The Catalyzer
-                </h2>
-              </div>
-              <div className="flex-grow">
-                <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine.
-                </p>
-                <p className="mt-3 text-indigo-500 inline-flex items-center">
-                  Learn More
-                </p>
+          <div className="col-6 col-lg-4">
+            <div className="container">
+              <div className="row">
+                <div className="col-12 px-0">
+                  <p className="fs-xxl m-0">£ 10.45 M</p>
+                  <p className="fs-sm">Equity Capital</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="p-4 md:w-1/3">
-            <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-              <div className="flex items-center mb-3">
-                <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0"></div>
-                <h2 className="text-gray-900 text-lg title-font font-medium">
-                  Neptune
-                </h2>
+          <div className="col-6 col-lg-4">
+            <div className="container">
+              <div className="row">
+                <div className="col-12 px-0">
+                  <p className="fs-xxl m-0">£ 10.45 M</p>
+                  <p className="fs-sm">Equity Capital</p>
+                </div>
               </div>
-              <div className="flex-grow">
-                <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine.
-                </p>
-                <p className="mt-3 text-indigo-500 inline-flex items-center">
-                  Learn More
-                </p>
+            </div>
+          </div>
+          <div className="col-6 col-lg-4">
+            <div className="container">
+              <div className="row">
+                <div className="col-12 px-0">
+                  <p className="fs-xxl m-0">£ 10.45 M</p>
+                  <p className="fs-sm">Equity Capital</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-lg-4">
+            <div className="container">
+              <div className="row">
+                <div className="col-12 px-0">
+                  <p className="fs-xxl m-0">£ 10.45 M</p>
+                  <p className="fs-sm">Equity Capital</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-6 col-lg-4">
+            <div className="container">
+              <div className="row">
+                <div className="col-12 px-0">
+                  <p className="fs-xxl m-0">£ 10.45 M</p>
+                  <p className="fs-sm">Equity Capital</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <hr />
+      {/* Diversification section */}
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 d-none d-md-block">
+            <Image
+              src={skyscaper}
+              alt="Diversification image"
+              width={636}
+              height={553}
+            />
+          </div>
+          <div className="col-lg-5 offset-lg-1 align-self-center">
+            <div className="container ">
+              <div className="row">
+                <div className="col-12 ">
+                  <h2 className="fs-xxxl fw-bolder">Sector focus</h2>
+                  <p className="py-lg-5 fs-lg">
+                    We deploy over twnty years of incestr backing,. operanis and
+                    managemtn and private invste exp4rience to invest ascrroos
+                    ,iltipl categrorie swithin thje srervive anmd technolmgi
+                    cescto:
+                  </p>
+                  
+                    <Link href="/aboutUs" className="fs-md fw-bolder text-uppercase">
+                      Learn more
+                    </Link>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
     </section>
   );
-}
+};
 
-export default SecondSection
+export default SecondSection;

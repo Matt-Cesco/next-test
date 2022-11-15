@@ -1,10 +1,11 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
-import imageUrlBuilder from "@sanity/image-url";
-import Image from "next/image";
+//import imageUrlBuilder from "@sanity/image-url";
 import groq from "groq";
 import sanityClient from "../client";
+import Image from "next/image";
+import diverseImage from "../public/image-test.webp";
 
 const DynamicSecondSection = dynamic(() => import("../components/secondSection"), {
    suspense: true,
@@ -38,11 +39,11 @@ export async function getStaticProps() {
   };
 }
 
-const builder = imageUrlBuilder(sanityClient);
-
-function urlFor(source) {
-  return builder.image(source);
-}
+//const builder = imageUrlBuilder(sanityClient);
+//
+//function urlFor(source) {
+//  return builder.image(source);
+//}
 
 
 export default function Home({ home }) {
@@ -56,27 +57,36 @@ export default function Home({ home }) {
         />
       </Head>
       <div className="py-5">
-        <section className="text-gray-700 body-font">
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold uppercase text-gray-900">
-                {home.title}
-              </h1>
-              <p className="mb-8 leading-relaxed">{home.description}</p>
-              <div className="flex justify-center">
-                <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                  Button
+        <div className="container col-xxl-8 px-4 py-5">
+          <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div className="col-10 col-sm-8 col-lg-6">
+              <Image
+                src={diverseImage}
+                alt="Diversification image"
+                width={512}
+                height={445}
+              />
+            </div>
+            <div className="col-lg-6">
+              <h1 className="display-5 fw-bold lh-1 mb-3">{home.title}</h1>
+              <p className="lead">{home.description}</p>
+              <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button
+                  type="button"
+                  className="btn btn-primary btn-lg px-4 me-md-2"
+                >
+                  Primary
                 </button>
-                <button className="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">
-                  Button
+                <button
+                  type="button"
+                  className="btn btn-outline-secondary btn-lg px-4"
+                >
+                  Default
                 </button>
               </div>
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              
-            </div>
           </div>
-        </section>
+        </div>
         <Suspense fallback={`Loading...`}>
           <DynamicSecondSection />
           <DynamicThirdSection />

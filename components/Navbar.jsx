@@ -5,28 +5,28 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="fixed w-full z-10 ease-in duration-300 bg-black">
-      <div className="max-w-screen-xl m-auto flex justify-between items-center p-4 text-green-500 bg-black">
-        <Link href="/">
-          <Image src={logo} alt="Company logo" width={85} height={68} />
-        </Link>
-        <ul className="hidden sm:flex">
-          <li className="p-4">
-            <Link href="/index" className="font-bold">
-              Home
-            </Link>
-          </li>
-          <li className="p-4">
-            <Link href="/AboutUs" className="font-bold">
-              About Us
-            </Link>
-          </li>
-          <li className="p-4">
-            <Link href="/Work" className="font-bold">
-              Work
-            </Link>
-          </li>
-        </ul>
+    <div className="container-fluid border-bottom bg-black">
+      <div className="container">
+        <div className="row">
+          <div className="d-flex justify-content-between align-items-center">
+            <div className="navbar-logo">
+               <Image src={logo} alt="Company logo" width={85} height={85} />
+            </div>
+            <div className="d-flex justify-content-center">
+              <div className="fs-md fw-bolder text-uppercase mx-4">
+                <Link href="/">Home</Link>
+              </div>
+              <div className="fs-md fw-bolder text-uppercase mx-4">
+                <Link href="/AboutUs">
+                  About Us
+                </Link>
+              </div>
+              <div className="fs-md fw-bolder text-uppercase mx-4">
+                <Link href="/Work">Work</Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
