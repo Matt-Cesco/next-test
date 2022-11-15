@@ -12,7 +12,7 @@ const Navbar = () => {
         </Link>
         <ul className="hidden sm:flex">
           <li className="p-4">
-            <Link href="/" className="font-bold">
+            <Link href="/index" className="font-bold">
               Home
             </Link>
           </li>

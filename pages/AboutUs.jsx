@@ -1,7 +1,6 @@
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
-
 const DynamicSecondSection = dynamic(() => import("../components/secondSection"), {
    suspense: true,
 });
@@ -20,7 +19,7 @@ const DynamicSixthSection = dynamic(() => import("../components/sixthSection"), 
 
 function AboutUs() {
   return (
-    <div className="py-24">
+    <div className="py-5">
       <Suspense fallback={`Loading...`}>
         <DynamicSecondSection />
         <DynamicThirdSection />

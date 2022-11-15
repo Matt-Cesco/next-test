@@ -1,10 +1,8 @@
 import Head from "next/head";
-import { data } from "autoprefixer";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import imageUrlBuilder from "@sanity/image-url";
 import Image from "next/image";
-import diverseImage from "../public/image-test.webp";
 import groq from "groq";
 import sanityClient from "../client";
 
@@ -42,9 +40,9 @@ export async function getStaticProps() {
 
 const builder = imageUrlBuilder(sanityClient);
 
-//function urlFor(source) {
-//  return builder.image(source);
-//}
+function urlFor(source) {
+  return builder.image(source);
+}
 
 
 export default function Home({ home }) {
@@ -57,7 +55,7 @@ export default function Home({ home }) {
           content="Matteo Next.js"
         />
       </Head>
-      <div className="py-24">
+      <div className="py-5">
         <section className="text-gray-700 body-font">
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -75,11 +73,7 @@ export default function Home({ home }) {
               </div>
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <Image
-                src={diverseImage}
-                width={636}
-                height={553}
-              />
+              
             </div>
           </div>
         </section>
