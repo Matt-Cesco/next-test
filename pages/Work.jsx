@@ -18,13 +18,11 @@ const DynamicSixthSection = dynamic(() => import("../components/sixthSection"), 
   suspense: true,
 });
 
-function AboutUs() {
+function Work() {
   return (
     <div className="py-24">
       <Suspense fallback={`Loading...`}>
-        <DynamicSecondSection />
-        <DynamicThirdSection />
-        <DynamicForthSection />
+        
         <DynamicFifthSection />
         <DynamicSixthSection />
       </Suspense>
@@ -32,4 +30,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default Work;

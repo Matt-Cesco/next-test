@@ -7,7 +7,6 @@ import Image from "next/image";
 import diverseImage from "../public/image-test.webp";
 import groq from "groq";
 import sanityClient from "../client";
-import ContentHome from "../components/ContentHome";
 
 const DynamicSecondSection = dynamic(() => import("../components/secondSection"), {
    suspense: true,
@@ -43,9 +42,9 @@ export async function getStaticProps() {
 
 const builder = imageUrlBuilder(sanityClient);
 
-function urlFor(source) {
-  return builder.image(source);
-}
+//function urlFor(source) {
+//  return builder.image(source);
+//}
 
 
 export default function Home({ home }) {
@@ -78,20 +77,12 @@ export default function Home({ home }) {
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <Image
                 src={diverseImage}
-<<<<<<< HEAD
-                alt="image from sanity homepage"
                 width={636}
                 height={553}
-=======
-                alt="Image uploaded manueally and not with sanity"
-                width={512}
-                height={445}
->>>>>>> 15ff7e727a3e71aa4b33f91b7f98a025a16277e9
               />
             </div>
           </div>
         </section>
-<<<<<<< HEAD
         <Suspense fallback={`Loading...`}>
           <DynamicSecondSection />
           <DynamicThirdSection />
@@ -99,9 +90,6 @@ export default function Home({ home }) {
           <DynamicFifthSection />
           <DynamicSixthSection />
         </Suspense>
-=======
-        <ContentHome />
->>>>>>> 15ff7e727a3e71aa4b33f91b7f98a025a16277e9
       </div>
     </>
   );
