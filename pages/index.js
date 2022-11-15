@@ -7,19 +7,19 @@ import sanityClient from "../client";
 import Image from "next/image";
 import diverseImage from "../public/image-test.webp";
 
-const DynamicSecondSection = dynamic(() => import("../components/secondSection"), {
+const DynamicSecondSection = dynamic(() => import("../components/SecondSection"), {
    suspense: true,
 });
-const DynamicThirdSection = dynamic(() => import("../components/thirdSection"), {
+const DynamicThirdSection = dynamic(() => import("../components/ThirdSection"), {
   suspense: true,
 });
-const DynamicForthSection = dynamic(() => import("../components/forthSection"), {
+const DynamicForthSection = dynamic(() => import("../components/ForthSection"), {
   suspense: true,
 });
-const DynamicFifthSection = dynamic(() => import("../components/fifthSection"), {
+const DynamicFifthSection = dynamic(() => import("../components/FifthSection"), {
   suspense: true,
 });
-const DynamicSixthSection = dynamic(() => import("../components/sixthSection"), {
+const DynamicSixthSection = dynamic(() => import("../components/SixthSection"), {
   suspense: true,
 });
 

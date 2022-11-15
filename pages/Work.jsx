@@ -2,13 +2,13 @@ import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
 const DynamicFifthSection = dynamic(
-  () => import("../components/fifthSection"),
+  () => import("../components/FifthSection"),
   {
     suspense: true,
   }
 );
 const DynamicSixthSection = dynamic(
-  () => import("../components/sixthSection"),
+  () => import("../components/SixthSection"),
   {
     suspense: true,
   }

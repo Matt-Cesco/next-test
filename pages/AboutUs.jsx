@@ -4,16 +4,16 @@ import { Suspense } from "react";
 const DynamicSecondSection = dynamic(() => import("../components/secondSection"), {
    suspense: true,
 });
-const DynamicThirdSection = dynamic(() => import("../components/thirdSection"), {
+const DynamicThirdSection = dynamic(() => import("../components/ThirdSection"), {
   suspense: true,
 });
-const DynamicForthSection = dynamic(() => import("../components/forthSection"), {
+const DynamicForthSection = dynamic(() => import("../components/ForthSection"), {
   suspense: true,
 });
-const DynamicFifthSection = dynamic(() => import("../components/fifthSection"), {
+const DynamicFifthSection = dynamic(() => import("../components/FifthSection"), {
   suspense: true,
 });
-const DynamicSixthSection = dynamic(() => import("../components/sixthSection"), {
+const DynamicSixthSection = dynamic(() => import("../components/SixthSection"), {
   suspense: true,
 });
 
