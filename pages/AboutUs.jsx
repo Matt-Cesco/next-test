@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
-const DynamicSecondSection = dynamic(() => import("../components/secondSection"), {
+const DynamicSecondSection = dynamic(() => import("../components/SecondSection"), {
    suspense: true,
 });
 const DynamicThirdSection = dynamic(() => import("../components/ThirdSection"), {
